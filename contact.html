@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h3>Contact Me</h3>
+
+    <fieldset style="width:fit-content;">
+    <legend><i>Kindly fill the form below</i></legend>
+    <form action="processform.php" method="post">
+        <p>
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" name="first" placeholder="First Name">
+        </p>
+        
+        <p>
+            <label for="last-name">Last Name</label><br>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+        </p>
+
+        <p>
+            <label for="email">Email</label><br>
+            <input type="email" id= "email" name="email" placeholder="Email">
+        </p>
+
+        <p>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Male">Male
+        </p>
+
+        <p>
+            <input type="checkbox" name="terms" required>By Checking this box, you agree to our terms and conditions
+        </p>
+
+        <p>
+            <label for="email">Your Message</label><br>
+            <textarea name="message" ></textarea>
+        </p>
+
+        <button type="submit">Send Message</button>
+    </form>
+    </fieldset>
+</body>
+</html>
